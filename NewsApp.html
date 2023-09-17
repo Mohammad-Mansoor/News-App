@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./NewsApp.js" defer></script>
+    <title>NewsApp</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-items container">
+        <a href="#"
+          ><img
+            src="./UPDATED LOGO2 copy.png"
+            alt="Company Logo"
+            onclick="reload()"
+        /></a>
+        <div class="links">
+          <li class="linkitems" id="Cricket" onclick="navItemClick('cricket')">
+            Cricket
+          </li>
+          <li
+            class="linkitems"
+            id="Politics"
+            onclick="navItemClick('politics')"
+          >
+            Politics
+          </li>
+          <li class="linkitems" id="finance" onclick="navItemClick('finance')">
+            finance
+          </li>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="You Can Search here!"
+          />
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="div-container container"></div>
+
+      <template class="card-template">
+        <div class="card">
+          <div class="header">
+            <img class="img" src="./logo1.png" alt="Company logo" />
+          </div>
+          <div class="div-content">
+            <h2 class="news-title">news Titl</h2>
+            <h6 class="news-date">gadget 2023/9/16</h6>
+            <p class="news-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto reprehenderit repellendus officiis, minus iusto
+              distinctio iste sequi cumque. Iusto, aut.
+            </p>
+          </div>
+        </div>
+      </template>
+    </main>
+  </body>
+</html>

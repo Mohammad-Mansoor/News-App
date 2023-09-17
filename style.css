@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 12vh;
+  background-color: #efefef;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: relative; */
+  /* border: 1px solid green; */
+  height: 100%;
+}
+
+.nav-items img {
+  width: 200px;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 19px;
+  color: #006699;
+  font-size: bold;
+  cursor: pointer;
+}
+
+.links .linkitems:hover {
+  color: #02354e;
+  border-bottom: 3px solid #d04c98;
+}
+.links .linkitems:active {
+  color: #d04c98;
+}
+
+.search {
+  width: 300px;
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #006699; */
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px gray;
+}
+.search .search-input {
+  flex: 1;
+  padding: 8px 5px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.search button {
+  padding: 8px 12px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #006699;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.search button:active {
+  color: #d04c98;
+}
+
+main {
+  margin-block: 0px;
+  margin-top: 110px;
+  /* border: 2px solid green; */
+}
+.div-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: start;
+}
+
+.card {
+  max-width: 300px;
+  width: 98%;
+  /* margin: auto; */
+  height: 400px;
+  padding: 10px;
+  box-shadow: 1px 1px 5px rgb(225, 221, 221);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  /* border: solid 1px red; */
+}
+.card:hover {
+  box-shadow: 3px 3px 10px gray;
+  transform: translateY(-2px);
+}
+.card .header {
+  max-width: 99%;
+  width: 95%;
+  margin: 0px auto;
+}
+.card .header img {
+  width: 100%;
+  height: 200px;
+  /* display: inline-block; */
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin: auto;
+  object-fit: cover;
+  box-shadow: 1px 1px 6px #dedbdb;
+}
+.div-content h2 {
+  margin-bottom: 10px;
+}
+.div-content h6 {
+  margin-bottom: 10px;
+}
+
+.div-content p {
+  margin-bottom: 10px;
+}
