@@ -18,15 +18,16 @@ function bindData(articles) {
   const card_template = document.querySelector(".card-template");
   div_container.innerHTML = "";
 
-  articles.forEach((article) => {
-    if (!article.urlToImage) return;
-    const card_clone = card_template.content.cloneNode(true);
-    fillCard(card_clone, article);
-    div_container.appendChild(card_clone);
-    // div_container.addEventListener("click", () => {
-    //   window.open(article.url, "_blank");
-    // });
-  });
+  articles &&
+    articles.forEach((article) => {
+      if (!article.urlToImage) return;
+      const card_clone = card_template.content.cloneNode(true);
+      fillCard(card_clone, article);
+      div_container.appendChild(card_clone);
+      // div_container.addEventListener("click", () => {
+      //   window.open(article.url, "_blank");
+      // });
+    });
 }
 
 function fillCard(card_clone, article) {
